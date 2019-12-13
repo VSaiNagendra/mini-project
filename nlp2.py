@@ -63,9 +63,9 @@ def doClusters(num_clusters, reducer, X, opt_file, i):
 	confusion=contingency_matrix(actuallabels,y)
 	write2d(opt_file, reducer+"--"+str(i), confusion, actuallabels, y)
 
-file_name = 'ds141-3'
+file_name = 't1ds141-3'
 num_clusters = 3
-opt_file = io.open("output.txt", 'w')
+opt_file = io.open("Toutput/t1output.txt", 'w')
 reducers = ['none', 'pca', 'kpca,lin', 'kpca,poly', 'kpca,cos', 'kpca,sig', 'svd']
 actuallabels=[0]*47 + [1]*47 + [2]*47
 
